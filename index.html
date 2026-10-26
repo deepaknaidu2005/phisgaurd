@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interactive phishing awareness and social engineering training module">
+<title>PhishGuard | Phishing Awareness Training</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+<div class="container nav">
+  <div class="brand">🛡️ <span>PhishGuard</span></div>
+  <nav>
+    <a href="#dashboard">Home</a><a href="#learn">Learn</a><a href="#cases">Cases</a>
+    <a href="#simulator">Spot It</a><a href="#quiz">Quiz</a><a href="#response">Response</a>
+    <a href="#roadmap">Future</a>
+  </nav>
+</div>
+</header>
+
+<main class="container">
+<section id="dashboard" class="hero">
+<div>
+<span class="badge">CYBERSECURITY AWARENESS • 2026 EDITION</span>
+<h1>Think. Verify. Then Click.</h1>
+<p>A practical, interactive training experience for recognizing phishing, fake websites, impersonation and modern social-engineering scams.</p>
+<div class="actions"><a class="button" href="#quiz">Start Challenge</a><a class="button outline" href="#cases">Explore Cases</a></div>
+</div>
+<div class="shield">🛡️</div>
+</section>
+
+<section class="stats">
+<div><b>20+</b><span>Quiz Questions</span></div><div><b>8</b><span>Real-world Patterns</span></div>
+<div><b>6</b><span>Social Tactics</span></div><div><b>5</b><span>Safety Layers</span></div>
+</section>
+
+<section id="learn">
+<h2>01 · Understand the Threat</h2>
+<p class="lead">Phishing is a form of social engineering in which an attacker tries to make a person reveal information or take an unsafe action. Modern scams can arrive by email, SMS, phone, social media, QR codes and fake websites.</p>
+<div class="grid">
+<article><span class="icon">📧</span><h3>Email phishing</h3><p>Fake invoices, account alerts, password resets and delivery notices.</p></article>
+<article><span class="icon">📱</span><h3>Smishing</h3><p>SMS or messaging-app scams using urgency, payments, tolls or delivery problems.</p></article>
+<article><span class="icon">☎️</span><h3>Vishing</h3><p>Voice calls that impersonate banks, support teams, officials or coworkers.</p></article>
+<article><span class="icon">🎯</span><h3>Spear phishing</h3><p>Personalized messages aimed at a specific person or organization.</p></article>
+<article><span class="icon">👑</span><h3>Whaling</h3><p>Targeted attacks against senior or high-value people.</p></article>
+<article><span class="icon">🔳</span><h3>QR phishing</h3><p>QR codes that send victims to fake login or payment pages.</p></article>
+</div>
+</section>
+
+<section id="cases">
+<h2>02 · Real-World Scam Patterns</h2>
+<p class="note">Training scenarios below are fictional recreations based on documented scam patterns. No live malicious links, credentials or malware are used.</p>
+<div class="case">
+<h3>🏦 Bank Security Alert</h3><p><b>Scenario:</b> “Suspicious activity detected. Verify your account now.”</p><p><b>Red flags:</b> urgency + unexpected login link + financial context.</p><p><b>Safe move:</b> Open the official banking app/site yourself.</p></div>
+<div class="case">
+<h3>📦 Package Delivery Problem</h3><p><b>Scenario:</b> “Your parcel is on hold. Pay a small fee to reschedule delivery.”</p><p><b>Red flags:</b> unexpected message + small payment + link.</p><p><b>Safe move:</b> Check tracking through the courier's known official channel.</p></div>
+<div class="case">
+<h3>💳 Payment / Shopping Impersonation</h3><p><b>Scenario:</b> “A payment was made. Click here to cancel it.”</p><p><b>Red flags:</b> panic + unknown transaction + login page.</p><p><b>Safe move:</b> Open the service directly and check transaction history.</p></div>
+<div class="case">
+<h3>💻 Fake Tech Support</h3><p><b>Scenario:</b> A pop-up says your computer has a virus and gives a phone number.</p><p><b>Red flags:</b> unexpected alarm + pressure to call + remote-access request.</p><p><b>Safe move:</b> Close the page and use trusted support channels.</p></div>
+<div class="case">
+<h3>🎟️ Fake Invitation</h3><p><b>Scenario:</b> An event invitation asks for your email password to view it.</p><p><b>Red flags:</b> unexpected invitation + credential request.</p><p><b>Safe move:</b> Never enter a password on an unexpected invitation page.</p></div>
+<div class="case">
+<h3>🚨 Government / Toll Impersonation</h3><p><b>Scenario:</b> “Unpaid toll. Pay today or your vehicle registration may be affected.”</p><p><b>Red flags:</b> authority + threat + deadline.</p><p><b>Safe move:</b> Contact the agency using a website or number you already know is genuine.</p></div>
+<div class="case">
+<h3>💼 Fake Job / Recruiter</h3><p><b>Scenario:</b> A recruiter asks for a fee or sensitive identity information before an interview.</p><p><b>Red flags:</b> unusual payment request + pressure + unverified recruiter.</p><p><b>Safe move:</b> Verify the employer independently and never pay to get a job.</p></div>
+<div class="case">
+<h3>🤖 AI-Enhanced Impersonation</h3><p><b>Scenario:</b> A highly polished message, cloned voice or personalized profile appears to be from someone you trust.</p><p><b>Red flags:</b> unusual request despite convincing language/voice.</p><p><b>Safe move:</b> Use a second trusted channel to verify the request.</p></div>
+</section>
+
+<section id="simulator">
+<h2>03 · Spot the Red Flags</h2>
+<p>Read the safe training message and identify the warning signs. This is a simulation only.</p>
+<div class="message">
+<div class="msghead"><b>From:</b> Account Security &lt;security-alert@account-check.invalid&gt;</div>
+<div><b>Subject:</b> URGENT — Your account will be suspended today</div>
+<p>We detected unusual activity. To prevent suspension, confirm your password within 10 minutes using the verification button below.</p>
+<button class="button" id="reveal">Reveal Analysis</button>
+<div id="analysis" class="analysis hidden">
+<b>🚩 Red flags found:</b>
+<ul><li>Urgency and threat of suspension</li><li>Unexpected password request</li><li>Suspicious sender/domain</li><li>Pressure to use a message link</li></ul>
+<b>Correct response:</b> Do not click or reply. Open the official service through a known route and verify.
+</div>
+</div>
+</section>
+
+<section>
+<h2>04 · Social Engineering Playbook</h2>
+<div class="grid">
+<article><h3>⚡ Urgency</h3><p>Creates a deadline so you skip verification.</p></article>
+<article><h3>👔 Authority</h3><p>Uses a boss, bank, teacher, police or support identity.</p></article>
+<article><h3>😨 Fear</h3><p>Uses account closure, fines or security threats.</p></article>
+<article><h3>🎁 Reward</h3><p>Uses prizes, refunds, discounts or jobs.</p></article>
+<article><h3>🤝 Trust</h3><p>Uses familiar names, logos, contacts or relationships.</p></article>
+<article><h3>🧠 Curiosity</h3><p>Uses unexpected files, invitations, photos or sensational claims.</p></article>
+</div>
+</section>
+
+<section>
+<h2>05 · Fake Website Checklist</h2>
+<div class="checklist">
+<p>🔎 <b>Domain:</b> Is the actual domain expected? Watch for look-alike spelling.</p>
+<p>🔐 <b>HTTPS:</b> Useful for encryption, but HTTPS alone does NOT prove a site is legitimate.</p>
+<p>🔗 <b>Link context:</b> Were you unexpectedly sent here?</p>
+<p>🔑 <b>Credentials:</b> Never provide passwords/OTPs to an unexpected page.</p>
+<p>🧭 <b>Independent navigation:</b> For sensitive accounts, use a known bookmark or official app.</p>
+</div>
+</section>
+
+<section id="response">
+<h2>06 · If You Already Clicked</h2>
+<div class="steps">
+<div><b>1</b><h3>Stop</h3><p>Do not continue entering information or communicating with the sender.</p></div>
+<div><b>2</b><h3>Protect</h3><p>If you entered a password, change it from a trusted device/site and enable MFA.</p></div>
+<div><b>3</b><h3>Secure</h3><p>If you downloaded something suspicious, disconnect as appropriate and follow trusted IT/security guidance.</p></div>
+<div><b>4</b><h3>Report</h3><p>Report the message to your organization/service and the appropriate fraud-reporting authority.</p></div>
+<div><b>5</b><h3>Learn</h3><p>Record what happened and review how the message bypassed your warning signs.</p></div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>07 · Adaptive Random Quiz</h2>
+<p>Each attempt selects <b>10 questions</b> from a 25-question bank. Answer choices are shuffled. Your next attempt will normally be different.</p>
+<div id="quizBox"></div>
+<div class="actions"><button class="button" id="submitBtn">Submit Quiz</button><button class="button outline" id="newBtn">New Quiz</button></div>
+<div id="result" class="result"></div>
+</section>
+
+<section>
+<h2>08 · Awareness Scorecard</h2>
+<div class="scorecard">
+<p><b>🛡️ Layer 1:</b> Pause before acting.</p>
+<p><b>🔎 Layer 2:</b> Inspect sender, domain and context.</p>
+<p><b>☎️ Layer 3:</b> Verify independently.</p>
+<p><b>🔐 Layer 4:</b> Use MFA and strong account protection.</p>
+<p><b>📣 Layer 5:</b> Report suspicious activity quickly.</p>
+</div>
+</section>
+
+<section id="roadmap">
+<h2>09 · Future-Ready Roadmap</h2>
+<p>This project is designed so future versions can add more awareness content without changing the core training.</p>
+<div class="roadmap">
+<div><span>V1</span><b>Current</b><p>Interactive module, real-world patterns, simulator and randomized quiz.</p></div>
+<div><span>V2</span><b>Planned</b><p>More scenarios, difficulty levels, topic-wise quiz modes and local-language training.</p></div>
+<div><span>V3</span><b>Advanced</b><p>AI-assisted message analysis, explainable red-flag detection and URL-risk education using safe offline examples.</p></div>
+<div><span>V4</span><b>Campus</b><p>Admin dashboard, anonymized progress analytics, training completion certificates and question-bank management.</p></div>
+<div><span>V5</span><b>Continuous</b><p>Monthly threat updates, new scam patterns, current statistics and content versioning.</p></div>
+</div>
+</section>
+
+<section>
+<h2>10 · Current Threat Snapshot</h2>
+<div class="snapshot">
+<p><b>Impersonation:</b> FTC reported more than $3.5 billion in reported losses to impersonation scams in 2025.</p>
+<p><b>Social media:</b> FTC reported $2.1 billion in losses from scams that started on social media in 2025.</p>
+<p><b>New phishing patterns:</b> FTC has warned about fake CAPTCHA-style phishing and fake invitation scams in 2026.</p>
+</div>
+<p class="small">Statistics and examples should be refreshed as new official advisories are published. This project intentionally separates educational scenarios from real malicious infrastructure.</p>
+</section>
+
+<section>
+<h2>Sources & Further Learning</h2>
+<ul class="sources">
+<li>Federal Trade Commission (FTC) — phishing and scam guidance</li>
+<li>Cybersecurity and Infrastructure Security Agency (CISA) — phishing guidance</li>
+<li>Official cybersecurity awareness resources and your organization's security/reporting process</li>
+</ul>
+</section>
+</main>
+<footer><p>PhishGuard · College Cybersecurity Awareness Project · Educational use only</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
